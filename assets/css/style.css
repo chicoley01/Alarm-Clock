@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+::-moz-selection {
+  background: #ee964b;
+  color: #fff;
+}
+
+::selection {
+  background: #ee964b;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+$font-main: 'Roboto', sans-serif;
+
+$color-main: #ee964b;
+$color-black: #000;
+$color-white: #fff;
+$color-darkgray: #1e1e1e;
+
+$gap-0: 0;
+$gap-1: 8px;
+$gap-2: 16px;
+$gap-3: 24px;
+$gap-4: 32px;
+$gap-5: 48px;
+$gap-6: 64px;
+$gap-7: 72px;
+$gap-8: 96px;
+$gap-9: 128px;
+
+@mixin responsive-desktop {
+    @media screen and (max-width: 1200px) {
+        @content
+    }
+}
+
+@mixin responsive-tablet {
+    @media screen and (max-width: 992px) {
+        @content
+    }
+}
+
+@mixin responsive-mobile {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin grid-layout() {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@mixin flexbox-between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexbox-around() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
