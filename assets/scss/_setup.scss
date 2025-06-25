@@ -1,11 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
 }
 
 ::selection {
-    background: $color-main;
-    color: $color-white;
+  width: 50px;
+  height: 50px;
+  background: $color-main;
+  color: $color-white;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+span {
+  color: $color-main;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  border: 0;
+
+  &:focus {
+    border: 0;
+  }
+}
+
+body {
+  color: $color-white;
+  background-color: $bg-main;
+}
+
+html {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: $gap-1;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $bg-main;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-main;
+  border-radius: $gap-1;
 }
