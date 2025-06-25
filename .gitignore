@@ -1,1 +1,26 @@
-Alarm Clock/assets/css/style.css.map
+# node_modules 
+node_modules/
+
+# build/output
+dist/
+build/
+
+# arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+*.code-workspace
+
+# arquivos SCSS compilados
+assets/css/*.map
+assets/img/
+
+# arquivos temporários
+*.log
+*.tmp
+
+# git-ignored por segurança
+.env
+.env.local
